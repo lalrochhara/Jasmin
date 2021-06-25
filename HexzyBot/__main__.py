@@ -76,24 +76,24 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = f"""
-Hello, \n I'm Jasmin 
-If you want to know how to use me, [️️ ️](https://telegra.ph/file/9f06565978a17c20794c7.jpg) hit /help
-Maintained by [Nicky Lalrochhara](t.me/nickylrca) ❤
+Hello, \n I'M Jasmin Famhawite 
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ[️️ ️](https://telegra.ph/file/68ffea4a889efbbfd3202.jpg)ɢʀᴏᴜᴘꜱ! ʜɪᴛ /help
+Maintained by [Famhawite-infotech](t.me/famhawite-infotech) ❤
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add me to Your Group ➕️", url="t.me/HexzyBot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/miss_lianchhiari_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="hexzy_"),
         InlineKeyboardButton(
-            text="Support", url=f"https://t.me/{SUPPORT_CHAT}"
+            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
-        InlineKeyboardButton(text="Jasmin Log", url=f"https://t.me/JasminLogs"),
+        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/JasminLogs"),
         InlineKeyboardButton(
             text="System Stats 💻", callback_data="stats_callback"
         ),
@@ -105,13 +105,13 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'm Jasmin'    [️️ ️](https://telegra.ph/file/68ffea4a889efbbfd3202.jpg)
+`Hi.. I'M` Jasmin Famhawite    [️️ ️](https://telegra.ph/file/68ffea4a889efbbfd3202.jpg)
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
 Powered by @Famhawite-infotech """
 
 DONATE_STRING = """Hey, glad to hear you want to donate!
- You can support the project Of [Nicky Lalrochhara](t.me/Nickylrca) \
- Supporting isnt always financial! [Mizo Bot project](t.me/MizoBotProject) \
+ You can support the project Of [Famhawite-infotech](t.me/Famhawite-infotech) \
+ Supporting isn't always financial! [Jasminupdates](t.me/jasminupdates) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -357,19 +357,19 @@ def hexzy_about_callback(update, context):
     query = update.callback_query
     if query.data == "hexzy_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Hexzy*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Jasmin Famhawite*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Secret @HiTechRocket
-                 \n❍ Support Group @HiTechRockets
-                 \n❍ Assistant @HexzyAsistant.
-                 \nHere is the [💾Repository](https://github.com/Prabhasha-p/HexzyBot).
-                 \n\nIf you have any question about Hexzy, let us know at .""",
+                 \n\n_Jasmin Famhawite licensed under  GPL-3.0 License_
+                 \n❍ Awesome Secret @JasminSupport
+                 \n❍ Support Group @JasminUpdates
+                 \n❍ Assistant @Sangteimusic
+                 \nHere is our Project Groups [Lushai Tech](https://t.me/lushaitech).
+                 \n\nIf you have any question about Jasmin Famhawite, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -400,8 +400,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Hexzy*
-                 \nHere is the [Source Code](https://github.com/Prabhasha-p/HexzyBot) .""",
+            text=""" Hi..🤗 I'm *Jasmin Famhawite*
+                 \nHere's my sister's [Miss Sangtei](https://t.me/sangtei_bot) also here [Sangtei Music](https://t.me/sangteibot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -648,7 +648,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1382148141 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -696,7 +696,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I'm always for ya 😹")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
